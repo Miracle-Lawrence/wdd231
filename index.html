@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="About Me page for WDD231" >
+    <meta name="author" content="Miracle Lawrence" >
+    <title>About Me - WDD231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/small.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/head-vr.svg" alt="Home Icon" width="512" height="512" >
+      <span>Miracle Lawrence</span>
+      <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+    </header>
+    <nav id="nav-bar" class="navigation" aria-label="Main site navigation">
+      <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Home</h1>
+      <section>
+        <h2>About Me</h2>
+        <p>My name is Miracle Lawrence, a passionate educator and software development student with a strong background 
+          in mathematics and over six years of teaching experience. I’m deeply committed to helping students build 
+          confidence in learning, especially in math and science, and I create engaging educational content, including 
+          games and videos, to make learning fun for kids. I’ve completed the PathwayConnect program and am currently 
+          pursuing a Bachelor's degree in Software Development, with a growing interest in tech-based furniture design. 
+          I also lead a programming study group and actively support peers in their learning journey. My goal is to combine 
+          creativity, technology, and education to make a meaningful impact.</p>
+      </section>
+      <section>
+        <h2>Student Photo</h2>
+        <div class="photo-section">
+          <img
+            src="images/profile.webp"
+            alt="Miracle Lawrence"
+            width="300"
+            height="300"
+          >
+        </div>
+    
+      </section>
+      <section>
+        <h2>Web Certificate Courses</h2>
+        <div class="course-filter">
+          <button id="all-courses-btn" class="filter-btn" type="button">All Courses</button>
+          <button id="wdd-courses-btn" class="filter-btn" type="button">WDD Courses</button>
+          <button id="cse-courses-btn" class="filter-btn" type="button">CSE Courses</button>
+        </div>
+        <div id="courses-container" class="courses-grid">
+          <!-- Course cards will be dynamically inserted here by JS -->
+        </div>
+        <div class="credits-summary">
+          Total Credits: <span id="total-credits">0</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/miracle-lawrence-711156266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <img
+            src="images/linkedin.svg"
+            alt="LinkedIn"
+            width="24"
+            height="24"
+          >
+        </a>
+        <a
+          href="https://github.com/Miracle-Lawrence/wdd231"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <img src="images/github.svg" alt="GitHub" width="24" height="24" >
+        </a>
+        <a
+          href="https://www.facebook.com/share/1DiP31DRx1/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
+          <img
+            src="images/facebook.svg"
+            alt="Facebook"
+            width="24"
+            height="24"
+          >
+        </a>
+      </div>      
+        <p id="year">
+          &copy; <span id="currentyear"></span> Miracle Lawrence, Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
