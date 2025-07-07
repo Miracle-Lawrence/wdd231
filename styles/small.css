@@ -1,4 +1,6 @@
-/* #715d79 for the socials*/
+:root {
+  --background-color: purple;
+}
 body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -23,13 +25,13 @@ header img {
 header span {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #b729f5;
+    color: var(--background-color);
 }
 
 .hamburger{
     background: none;
     border: none;
-    color: #b729f5;
+    color: var(--background-color);
     cursor: pointer;
 }
 
@@ -40,7 +42,7 @@ header span {
 }
 
 .hamburger:hover {
-    color: rgb(244, 7, 7);
+    color: #b729f5;
 }
 
 .hamburger.show::before {
@@ -64,14 +66,14 @@ nav {
 
 .navigation a {
     text-decoration: none;
-    color: #b729f5;
+    color: var(--background-color);
     padding: 5px 0 10px 10px;
     display: block;
     border-bottom: 1px solid #ddd;
 }
 
 .navigation a:hover {
-    background-color: #b729f5;
+    background-color: var(--background-color);
     color: white;
 }
 
@@ -83,7 +85,7 @@ nav {
 h1 {
     font-size: 1.5rem;
     margin: 0.5rem 0;
-    color: #b729f5;
+    color: var(--background-color);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -91,7 +93,7 @@ h1 {
 h2 {
     font-size: 1rem;
     margin: 0.5rem 0;
-    background-color: #b729f5;
+    background-color: var(--background-color);
     padding: 10px;
     color: white;
     display: flex;
@@ -114,9 +116,10 @@ p {
     align-items: center;
 }
 .photo-section img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -132,7 +135,7 @@ p {
 
   .filter-btn {
     flex: 1;
-    background: #b729f5;
+    background: var(--background-color);
     border: none;
     color: white;
     padding: 12px 24px;
@@ -191,7 +194,7 @@ p {
 
   #total-credits {
     font-weight: bold;
-    color: #b729f5;
+    color: var(--background-color);
   }
 
 .course-card.not-completed {
@@ -201,7 +204,7 @@ p {
 
 
 footer {
-    background: #b729f5;
+    background: var(--background-color);
     color: white;
     text-align: center;
     padding: 30px 20px;
