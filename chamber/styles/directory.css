@@ -1,0 +1,388 @@
+/**💼 Main color (Primary)
+Deep Blue: #003366
+
+Conveys professionalism, trust, and authority.
+
+🌟 Accent color (Secondary)
+Golden Yellow: #FFD700
+
+Adds energy, optimism, and highlights call-to-action areas.
+
+💚 Support color
+Rich Green: #007A33
+
+Suggests growth, sustainability, and community prosperity.
+
+⚪ Background / Light neutral
+Very Light Gray: #F9FAFB
+
+Clean, spacious, and helps avoid pure white glare.
+
+⚫ Text (Dark)
+Charcoal: #222222
+
+Ensures high readability on light backgrounds.
+
+💬 Optional soft accent (for subtle touches or buttons)
+Light Blue Gray: #E5EEF5**/
+
+/* Example usage
+Header & Footer background: Deep Blue (#003366)
+
+Buttons & CTA highlights: Golden Yellow (#FFD700) with dark text
+
+Section backgrounds: Very Light Gray (#F9FAFB) or white
+
+Links or secondary buttons: Rich Green (#007A33)
+
+Text: Charcoal (#222222) */
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px 24px;
+  gap: 10px;
+  align-items: end;
+  padding: 5px 0 10px 5px;
+  border-bottom: 1px solid #ffd700;
+  background-color: #003366;
+  position: relative;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+header #ham-btn {
+  order: 5; 
+}
+
+header img:last-of-type {
+  width: 24px;
+  min-width: 24px;
+  height: auto;
+}
+
+
+header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger:hover {
+  color: #007a33;
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+
+.navigation {
+  display: none;
+  position:absolute;
+  top: 100%;
+  right: 0;
+  
+  width: 150px;
+  height: 200px;
+  background-color: #003366; /* Deep blue background */
+  padding-top: 3rem; /* space for header */
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  display: block;
+  color: #ffd700;
+  padding: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation a:hover {
+  background-color: #007a33;
+  color: white;
+}
+
+.navigation li.current {
+  background-color: #007a33;
+  color: #007a33;
+  padding-right: 10px;
+}
+
+/*Footer styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #003366; /* Deep Blue */
+  color: white;
+}
+
+
+footer h3 {
+  margin-top: 0;
+  color: #FFD700; 
+}
+
+footer p,
+footer a {
+  color: #F9FAFB; /* Very light gray for text readability */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer .socials img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+footer .footer-info p {
+  margin: 0.5rem 0;
+}
+
+footer #year {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+#lastModified {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div {
+    margin: 1rem 0;
+  }
+
+  footer .socials {
+    justify-content: center;
+  }
+}
+
+
+/* Member card container style */
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+
+/* Individual member card style */
+.member-card {
+  background-color: #f9fafb; /* Very light gray */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image style */
+.member-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Card text style */
+.member-card h2 {
+  font-size: 1.2rem;
+  color: #003366; /* Deep blue */
+  margin: 0.5rem 0;
+}
+
+.member-card p {
+  margin: 0.3rem 0;
+  color: #222222; /* Charcoal */
+  font-size: 0.9rem;
+}
+
+.member-card p:last-of-type {
+  font-weight: bold;
+  color: #007a33; /* Rich green for membership level */
+}
+.toggle-view-btn {
+  background-color: #ffd700;
+  color: #222222;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 1rem auto;
+  display: block;
+}
+
+.toggle-view-btn:hover {
+  background-color: #007a33; /* Rich Green on hover */
+  color: white;
+  transform: translateY(-2px);
+}
+
+.toggle-view-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 51, 0.4);
+}
+
+
+
+/*Large screens */
+
+@media (min-width: 38rem) {
+  header {
+    grid-template-columns: 24px auto auto 24px;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  header img:last-of-type {
+    order: 4;
+  }
+
+  header img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+  header #ham-btn {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header,
+  main,
+  nav,
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .navigation {
+  display: block;
+  position: static; /* reset position */
+  width: auto; /* reset width */
+  height: auto; /* reset height */
+  background: none; /* remove background */
+  box-shadow: none; /* remove shadow */
+  padding-top: 0; /* reset padding */
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #ffd700;
+  border: none;
+}
+
+.navigation a:hover {
+  background-color: #007a33;
+  color: white;
+  border-radius: 4px;
+}
+  .navigation ul {
+    display: flex;
+    
+  }
+
+  footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #003366; /* Deep Blue */
+  color: white;
+}
+}

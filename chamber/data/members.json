@@ -1,0 +1,79 @@
+[
+    {
+        "name": "GreenTech Solutions",
+        "address": "123 Elm Street, Springfield, IL 62704",
+        "phone": "+1-217-555-0101",
+        "website": "https://www.greentechsolutions.com",
+        "image": "greentech7.webp",
+        "membership_level": 3,
+        "industry": "Technology",
+        "contact_person": "Jane Doe",
+        "email": "contact@greentechsolutions.com"
+    },
+    {
+        "name": "Fresh Foods Market",
+        "address": "456 Oak Avenue, Springfield, IL 62705",
+        "phone": "+1-217-555-0102",
+        "website": "https://www.freshfoodsmarket.com",
+        "image": "market6.webp",
+        "membership_level": 2,
+        "industry": "Retail",
+        "contact_person": "John Smith",
+        "email": "info@freshfoodsmarket.com"
+    },
+    {
+        "name": "Springfield Fitness Center",
+        "address": "789 Maple Road, Springfield, IL 62706",
+        "phone": "+1-217-555-0103",
+        "website": "https://www.springfieldfitness.com",
+        "image": "fitness5.webp",
+        "membership_level": 1,
+        "industry": "Health & Wellness",
+        "contact_person": "Emily Clark",
+        "email": "support@springfieldfitness.com"
+    },
+    {
+        "name": "Techie Repairs",
+        "address": "321 Pine Lane, Springfield, IL 62707",
+        "phone": "+1-217-555-0104",
+        "website": "https://www.techierepairs.com",
+        "image": "techie4.webp",
+        "membership_level": 2,
+        "industry": "Electronics",
+        "contact_person": "Michael Lee",
+        "email": "service@techierepairs.com"
+    },
+    {
+        "name": "Creative Minds Agency",
+        "address": "654 Cedar Blvd, Springfield, IL 62708",
+        "phone": "+1-217-555-0105",
+        "website": "https://www.creativemindsagency.com",
+        "image": "Creative3.webp",
+        "membership_level": 3,
+        "industry": "Marketing",
+        "contact_person": "Sara Kim",
+        "email": "hello@creativemindsagency.com"
+    },
+    {
+        "name": "EcoClean Services",
+        "address": "987 Birch Street, Springfield, IL 62709",
+        "phone": "+1-217-555-0106",
+        "website": "https://www.ecocleanservices.com",
+        "image": "clean2.webp",
+        "membership_level": 1,
+        "industry": "Cleaning",
+        "contact_person": "David Brown",
+        "email": "info@ecocleanservices.com"
+    },
+    {
+        "name": "Smart Finance Group",
+        "address": "159 Walnut Ave, Springfield, IL 62710",
+        "phone": "+1-217-555-0107",
+        "website": "https://www.smartfinancegroup.com",
+        "image": "finance1.webp",
+        "membership_level": 2,
+        "industry": "Finance",
+        "contact_person": "Linda White",
+        "email": "contact@smartfinancegroup.com"
+    }
+]
