@@ -1,41 +1,4 @@
-/**💼 Main color (Primary)
-Deep Blue: #003366
 
-Conveys professionalism, trust, and authority.
-
-🌟 Accent color (Secondary)
-Golden Yellow: #FFD700
-
-Adds energy, optimism, and highlights call-to-action areas.
-
-💚 Support color
-Rich Green: #007A33
-
-Suggests growth, sustainability, and community prosperity.
-
-⚪ Background / Light neutral
-Very Light Gray: #F9FAFB
-
-Clean, spacious, and helps avoid pure white glare.
-
-⚫ Text (Dark)
-Charcoal: #222222
-
-Ensures high readability on light backgrounds.
-
-💬 Optional soft accent (for subtle touches or buttons)
-Light Blue Gray: #E5EEF5**/
-
-/* Example usage
-Header & Footer background: Deep Blue (#003366)
-
-Buttons & CTA highlights: Golden Yellow (#FFD700) with dark text
-
-Section backgrounds: Very Light Gray (#F9FAFB) or white
-
-Links or secondary buttons: Rich Green (#007A33)
-
-Text: Charcoal (#222222) */
 
 body {
   font-family: Roboto, sans-serif;
@@ -376,6 +339,14 @@ footer #year {
     
   }
 
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  
+
   footer {
   display: flex;
   flex-wrap: wrap;
@@ -386,3 +357,262 @@ footer #year {
   color: white;
 }
 }
+
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0));
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #FFD700;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #FFD700;
+  color: #222222;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #007a33;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* EVENTS SECTION */
+.current-events {
+  margin-bottom: 3rem;
+  background-color: #F9FAFB;
+  border-left: 5px solid #007a33;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #003366;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.current-events h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0;
+  background-color: #003366;
+  padding: 5px;
+}
+.current-events p {
+  color: #222222;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+
+/* WEATHER SECTION */
+#weather, #forecast {
+  margin-bottom: 3rem;
+}
+
+#weather h3,
+#forecast h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0;
+  background-color: #003366;
+  padding: 5px;
+}
+
+.current-weather {
+  background-color: #f9fafb;
+  border-left: 5px solid #FFD700;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.current-weather p {
+  margin: 0;
+  color: #003366;
+  font-size: 1rem;
+}
+
+.current-weather figure {
+  margin: 0;
+  text-align: center;
+}
+
+.current-weather img {
+  width: 48px;
+  height: 48px;
+}
+
+/* FORECAST DAYS */
+.forecast-days {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  flex: 1 1 100px;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.forecast-day p {
+  color: #222222;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* SPOTLIGHTS SECTION */
+#spotlights {
+  margin-bottom: 3rem;
+}
+
+#spotlights h2 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+
+.spotlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.spotlight-card h3 {
+  font-size: 1rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+.spotlight-card p {
+  color: #222222;
+  margin: 0.3rem 0;
+}
+.spotlight-card p:last-of-type {
+  font-weight: bold;
+  color: #007a33; /* Rich green for membership level */
+}
+.spotlight-card a {
+  display: inline-block;
+  background-color: #007a33;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.spotlight-card a:hover {
+  background-color: #005a26; /* Darker green on hover */
+  transform: translateY(-2px);
+}
+.spotlight-card a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 51, 0.4);
+}
+.spotlight-card a:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+.spotlight-card p {
+  margin: 0.3rem 0;
+  color: #222222; /* Charcoal */
+  font-size: 0.9rem;
+}
+.spotlight-card p:last-of-type {
+  font-weight: bold;
+  color: #007a33; /* Rich green for membership level */
+}
+.spotlight-card h3 {
+  font-size: 1rem;
+  color: #003366; /* Deep blue */
+  margin-bottom: 0.5rem;
+}
+.spotlight-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.spotlight-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.spotlight-card h3 {
+  font-size: 1rem;
+  color: #003366; /* Deep blue */
+  margin-bottom: 0.5rem;
+}
+.spotlight-card p {
+  color: #222222; /* Charcoal */
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
