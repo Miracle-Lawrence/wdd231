@@ -101,3 +101,44 @@ wddBtn.addEventListener("click", () => filterCourses("WDD"));
 cseBtn.addEventListener("click", () => filterCourses("CSE"));
 
 renderCourses(courses);
+
+
+// Get dialog and close button elements
+const courseDetails = document.getElementById("course-details");
+const courseInfo = document.getElementById("course-info");
+const closeDialogBtn = document.getElementById("close-dialog");
+
+// Display course details in the dialog
+function displayCourseDetails(course) {
+  courseInfo.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+  courseDetails.showModal(); // Display the dialog
+}
+
+// Close the dialog when the close button is clicked
+closeDialogBtn.addEventListener("click", () => {
+  courseDetails.close();
+});
+
+// Event delegation: Listen for clicks on any course card
+coursesContainer.addEventListener("click", (e) => {
+  const clickedCard = e.target.closest(".course-card");
+  if (!clickedCard) return;
+
+  const courseTitle = clickedCard.querySelector("h3").textContent;
+  const [subject, number] = courseTitle.split(" ");
+
+  const selectedCourse = courses.find(
+    (c) => c.subject === subject && c.number === parseInt(number)
+  );
+
+  if (selectedCourse) {
+    displayCourseDetails(selectedCourse);
+  }
+});
