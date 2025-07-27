@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Owerri Chamber of Commerce to connect with local businesses and access exclusive resources.">
+    <meta name="author" content="Miracle Lawrence">
+    <meta property="og:title" content="Owerri Chamber of Commerce - Join">
+    <meta property="og:description" content="Join the Owerri Chamber of Commerce to connect with local businesses and access exclusive resources.">
+    <meta property="og:image" content="https://miracle-lawrence.github.io/wdd231/chamber/images/join.webp">
+    <meta property="og:url" content="https://miracle-lawrence.github.io/wdd231/chamber/join.html">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"></noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <title>Join the Owerri Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+         <img src="images/shopping-cart.svg" alt="Home Icon" width="512" height="512" loading="lazy">
+        <span>Owerri Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <img src="images/directory.svg" alt="Directory Image" width="512" height="512" loading="lazy">
+        <nav id="nav-bar" class="navigation" aria-label="Main site navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class ="join-page">
+                      
+      <div class="form-cards-wrapper">
+        <section>
+          <h1>Membership Application Form</h1>
+        <!-- Membership Form -->
+      <form method="GET" action="thankyou.html">
+        
+      <!-- First Name -->
+      <label>
+        First Name:
+        <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name" >
+      </label>
+
+      <!-- Last Name -->
+      <label>
+        Last Name:
+        <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name" >
+      </label>
+
+      <!-- Organizational Title -->
+      <label>
+        Organization Title:
+        <input type="text" name="orgTitle" title="Your title in the organization" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" >
+      </label>
+
+      <!-- Email Address -->
+      <label>
+        Email:
+        <input type="email" name="email" required title="Enter a valid email" autocomplete="email" placeholder="example@example.com" >
+      </label>
+
+      <!-- Mobile Phone -->
+      <label>
+        Mobile Number:
+        <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel" >
+      </label>
+
+      <!-- Organization Name -->
+      <label>
+        Organization Name:
+        <input type="text" name="organization" required title="Your organization's name" autocomplete="organization" >
+      </label>
+
+      <!-- Membership Level -->
+      <label>
+        Membership Level:
+        <select name="membership" title="Select your membership level">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <!-- Business Description -->
+      <label>
+        Business Description:
+        <textarea name="description" title="Describe your business"></textarea>
+      </label>
+
+      <!-- Timestamp (Hidden) -->
+      <input type="hidden" name="timestamp" id="timestamp" >
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Application" >
+    </form>
+    </section>
+
+    <!-- Membership Info Cards -->
+    <section class="cards">
+      <h1>Membership Levels</h1>
+      <div class="card" id="npCard">
+        <h3>Non Profit Membership Level</h3>
+        <button class="open-btn">Learn more</button>
+        <dialog>
+          <h3>Non Profit Membership Level</h3>
+          <p>No fees. Access to community events only.</p>
+          <button class="close-btn">X</button>
+        </dialog>
+      </div>
+      <div class="card" id="bronzeCard">
+        <h3>Bronze Membership Level</h3>
+        <button class="open-btn">Learn more</button>
+        <dialog>
+          <h3>Bronze Membership Level</h3>
+          <p>Includes event discounts and quarterly newsletters.</p>
+          <button class="close-btn">X</button>
+        </dialog>
+      </div>
+      <div class="card" id="silverCard">
+        <h3>Silver Membership Level</h3>
+        <button class="open-btn">Learn more</button>
+        <dialog>
+          <h3>Silver Membership Level</h3>
+          <p>All Bronze benefits + monthly training sessions.</p>
+          <button class="close-btn">X</button>
+        </dialog>
+      </div>
+      <div class="card" id="goldCard">
+        <h3>Gold Membership Level</h3>
+        <button class="open-btn">Learn more</button>
+        <dialog>
+          <h3>Gold Membership Level</h3>
+          <p>All Silver benefits + advertising and homepage spotlight.</p>
+          <button class="close-btn">X</button>
+        </dialog>
+      </div>
+    </section>
+    </div>   
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Owerri Chamber of Commerce</h3>
+            <p>Address: 123 Business St, Owerri, Nigeria</p>
+            <p>Email: info@owerrichamber.com</p>
+            <p>Phone: (+234) 906-869-9057</p>
+        </div>
+        <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/miracle-lawrence-711156266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <img
+            src="images/linkedin.svg"
+            alt="LinkedIn"
+            width="512"
+            height="512"
+            loading="lazy"
+          >
+        </a>
+        <a
+          href="https://github.com/Miracle-Lawrence/wdd231"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <img src="images/github.svg" alt="GitHub" width="512" height="512" loading="lazy" >
+        </a>
+        <a
+          href="https://www.facebook.com/share/1DiP31DRx1/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
+          <img
+            src="images/facebook.svg"
+            alt="Facebook"
+            width="512"
+            height="512"
+            loading="lazy"
+          >
+        </a>
+      </div>      
+      <div class="footer-info">
+        <p>WDD231 Class Project</p>
+        <p>Miracle Lawrence</p>
+        <p id="year">
+          &copy; <span id="currentyear"></span> Owerri Chamber of Commerce, Nigeria
+        </p>
+        <p id="lastModified"></p>
+      </div>
+        
+    </footer>
+
+    
+</body>
+</html>
