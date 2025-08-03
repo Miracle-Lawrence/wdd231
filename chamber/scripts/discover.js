@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.innerHTML = `
           <figure>
-            <img src="${place.image}" alt="${place.name}">
+            <img src="${place.image}" alt="${place.name}" loading="lazy">
             <figcaption>${place.name}</figcaption>
           </figure>
           <div class="info">
