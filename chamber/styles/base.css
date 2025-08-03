@@ -74,6 +74,7 @@
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
+  margin: 1rem;
 }
 
 .learn-more:hover {
