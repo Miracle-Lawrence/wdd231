@@ -1,0 +1,24 @@
+@media (min-width: 64rem) {
+  .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.gallery img {
+    max-width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+.gallery h2{
+    font-size: 1.2rem;
+    color: #003366;
+}
+.gallery p {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    
+}
+}

@@ -1,0 +1,42 @@
+@media (min-width: 38rem) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "image info";
+    gap: 1rem;
+    align-items: start;
+    text-align: left;
+  }
+
+  .gallery figure {
+    grid-area: image;
+    margin: 0;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .gallery .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .gallery h2,
+  .gallery p,
+  .gallery address {
+    margin: 0;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
+  
+}

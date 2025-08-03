@@ -429,7 +429,7 @@ footer #year {
 h2 {
   color: #003366;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  
 }
 
 .current-events h3 {
@@ -851,4 +851,20 @@ h2 {
 
 .join-page input[type="submit"]:hover {
   background-color: #002244;
+}
+
+@media (min-width: 38rem) and (max-width: 63.99rem) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div {
+    margin: 1rem 0;
+  }
+
+  footer .socials {
+    justify-content: center;
+  }
 }

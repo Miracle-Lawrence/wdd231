@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Oguta Lake",
+    "image": "images/oguta-lake.webp",
+    "address": "Oguta, Imo State, Nigeria",
+    "description": "A serene natural lake ideal for relaxation and boat rides."
+  },
+  {
+    "name": "National Museum Owerri",
+    "image": "images/owerri-museum.webp",
+    "address": "Orlu Road, Owerri, Nigeria",
+    "description": "Houses important artifacts representing Igbo culture."
+  },
+  {
+    "name": "Ikeji Festival",
+    "image": "images/ikeji-festival.webp",
+    "address": "Arondizuogu, Imo State",
+    "description": "A vibrant traditional festival celebrated annually in Owerri."
+  },
+  {
+    "name": "Owerri Mall",
+    "image": "images/owerri-mall.webp",
+    "address": "Egbu Road, Owerri, Nigeria",
+    "description": "Modern shopping and leisure center in the heart of Owerri."
+  },
+  {
+    "name": "Dan Anyiam Stadium",
+    "image": "images/dan-anyiam.webp",
+    "address": "Wetheral Road, Owerri",
+    "description": "Home of Heartland FC and venue for major sporting events."
+  },
+  {
+    "name": "Maria Assumpta Cathedral",
+    "image": "images/assumpta-cathedral.webp",
+    "address": "Port Harcourt Road, Owerri",
+    "description": "A majestic Roman Catholic cathedral in Imo State."
+  },
+  {
+    "name": "Mbari Cultural Center",
+    "image": "images/mbari-house.webp",
+    "address": "Mbaise Road, Owerri",
+    "description": "Cultural museum with open-air artworks and artifacts."
+  },
+  {
+    "name": "Freedom Square",
+    "image": "images/freedom-square.webp",
+    "address": "Wetheral Road, Owerri",
+    "description": "Popular community space for events and public gatherings."
+  }
+]
