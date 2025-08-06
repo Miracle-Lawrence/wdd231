@@ -1,0 +1,65 @@
+{
+  "meals": [
+    {
+      "name": "African Jollof with Kanda and Native Fish",
+      "price": "N3,800 with Delivery",
+      "image": "images/jollof-kanda-fish.webp",
+      "description": "Delicious smoky African jollof rice served with spicy kanda (cow skin) and seasoned native fish. A hearty, flavorful dish packed with traditional taste."
+  },
+  {
+    "name": "Assorted Meat Stew Sauce with White Rice",
+    "price": "N4,000 with Delivery",
+    "image": "images/assorted-meat-rice.webp",
+    "description": "Tender assorted meats stewed in rich tomato sauce served with fluffy white rice. A spicy and savory delight that’s sure to satisfy."
+  },
+  {
+    "name": "African Jollof with Fried Chicken and Plantain",
+    "price": "N3,500 with Delivery",
+    "image": "images/jollof-chicken-plantain.webp",
+    "description": "Perfectly cooked jollof rice paired with crispy fried chicken and sweet ripe plantains. A classic West African combo."
+  },
+  {
+    "name": "Vegetable Sauce with White Rice",
+    "price": "N3,500 with Delivery",
+    "image": "images/veg-sauce-rice.webp",
+    "description": "Healthy and colorful vegetable sauce served with white rice. Rich in nutrients and bursting with flavor."
+  },
+  {
+    "name": "White Native Rice with Stake",
+    "price": "N3,500 with Delivery",
+    "image": "images/native-rice-steak.webp",
+    "description": "Local white rice paired with tender, juicy steak. A satisfying fusion of native and modern flavors."
+  },
+  {
+    "name": "Barbecue Fish with White Rice and Sauce",
+    "price": "N12,000 with Delivery",
+    "image": "images/bbq-fish-rice.webp",
+    "description": "Grilled barbecue fish served with seasoned white rice and spicy sauce. A premium dish for seafood lovers."
+  },
+  {
+    "name": "Food Tray with Assorted Meals",
+    "price": "N25,000 with Delivery",
+    "image": "images/food-tray.webp",
+    "description": "A large food tray packed with assorted meals including rice, meats, sauces, and sides. Perfect for parties and family sharing."
+  },
+  {
+    "name": "African Native Rice with Native Fish and Veggies",
+    "price": "N3,500 with Delivery",
+    "image": "images/native-rice-fish-veggies.webp",
+    "description": "Native rice cooked with herbs, paired with fresh fish and sautéed vegetables. A wholesome traditional favorite."
+  },
+  {
+    "name": "Chicken Goat Meat Pepper Soup with White Rice",
+    "price": "N4,000 with Delivery",
+    "image": "images/pepper-soup-rice.webp",
+    "description": "Spicy pepper soup loaded with chicken and goat meat, served with white rice and seasoned vegetables. A comforting and warming meal."
+  },
+  {
+    "name": "Fried Rice with Fried Chicken and Veggies",
+    "price": "N3,500 with Delivery",
+    "image": "images/fried-rice-chicken.webp",
+    "description": "Classic fried rice with crispy fried chicken and mixed vegetables. A crowd-pleasing favorite for all occasions."
+  }
+]
+}
+  
