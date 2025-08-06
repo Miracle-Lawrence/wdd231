@@ -8,7 +8,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 24px auto 44px 24px;
+  grid-template-columns: 24px auto 44px;
   gap: 10px;
   align-items: end;
   padding: 5px 0 10px 5px;
@@ -55,7 +55,7 @@ header span {
   background: none;
   border: none;
   color: #FF914D;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .hamburger::before {
@@ -251,6 +251,7 @@ footer {
     align-items: center;
     text-align: left;
     padding: 2rem 4rem;
+    font-size: 0.8rem;
   }
 
   footer .contact-info {
@@ -272,6 +273,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 0.8rem;
   }
 
   footer div {
