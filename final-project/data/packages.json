@@ -1,0 +1,64 @@
+{
+    "packages": [
+        {
+            "name": "Daily Package",
+            "description": "Perfect for short-term convenience with 2 nutritious meals per day.",
+            "breakfast": "Fried Yam & Egg Sauce (could be alternated according to meals available on menu)",
+            "dinner": "Jollof Rice & Chicken (could be alternated according to meals available on menu)",
+            "price_per_day": 2500,
+            "total_price": 2500,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20Daily%20Package%20at%20₦2500",
+            "image": "images/package.webp"
+        },
+        {
+            "name": "Weekly Package",
+            "description": "Stay energized throughout the week with tasty breakfast and dinner meals every day.",
+            "breakfast": "Bread & Beans (could be alternated according to meals available on menu)",
+            "dinner": "Eba & Egusi Soup (could be alternated according to meals available on menu)",
+            "price_per_day": 2500,
+            "total_price": 17500,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20Weekly%20Package%20at%20₦17500",
+            "image": "images/package.webp"
+        },
+        {
+            "name": "Monthly Package",
+            "description": "Affordable daily meals for 30 days. Ideal for students on a tight budget.",
+            "breakfast": "Akara & Pap (could be alternated according to meals available on menu)",
+            "dinner": "Spaghetti & Turkey (could be alternated according to meals available on menu)",
+            "price_per_day": 2500,
+            "total_price": 75000,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20Monthly%20Package%20at%20₦75000",
+            "image": "images/package.webp"
+        },
+        {
+            "name": "Semester Package",
+            "description": "Long-term savings for a semester's worth of delicious meals.",
+            "breakfast": "Boiled Plantain & Egg Sauce (could be alternated according to meals available on menu)",
+            "dinner": "Pounded Yam & Vegetable Soup (could be alternated according to meals available on menu)",
+            "price_per_day": 2500,
+            "total_price": 225000,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20Semester%20Package%20at%20₦225000",
+            "image": "images/package.webp"
+        },
+        {
+            "name": "School Year Package",
+            "description": "One-time payment for daily meals throughout the academic session.",
+            "breakfast": "Moi Moi & Custard (could be alternated according to meals available on menu)",
+            "dinner": "Amala & Ogbono Soup (could be alternated according to meals available on menu)",
+            "price_per_day": 2500,
+            "total_price": 450000,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20School%20Year%20Package%20at%20₦450000",
+            "image": "images/package.webp"
+        },
+        {
+            "name": "Mega Combo Package",
+            "description": "Premium combo with rotating gourmet meals, fruits & drinks included!",
+            "breakfast": "Club Sandwich & Tea (could be alternated according to meals available on menu)",
+            "dinner": "Fried Rice, Salad & Chicken (could be alternated according to meals available on menu)",
+            "price_per_day": 3500,
+            "total_price": 105000,
+            "subscribe_link": "https://wa.me/2348133744840?text=I'd%20like%20to%20subscribe%20for%20Mega%20Combo%20Package%20at%20₦105000",
+            "image": "images/package.webp"
+        }
+    ]
+}
