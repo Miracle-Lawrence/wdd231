@@ -1,0 +1,183 @@
+{
+  "menu": [
+    {
+      "name": "African Jollof with Kanda and Native Fish",
+      "price": "N3,800 with Delivery",
+      "image": "images/jollof-kanda-fish.webp",
+      "description": "Delicious smoky African jollof rice with spicy kanda and native fish.",
+      "category": "daily-specials"
+    },
+    {
+      "name": "Assorted Meat Stew Sauce with White Rice",
+      "price": "N4,000 with Delivery",
+      "image": "images/assorted-meat-rice.webp",
+      "description": "Tender assorted meats in tomato sauce with fluffy rice.",
+      "category": "daily-specials"
+    },
+    {
+      "name": "African Jollof with Fried Chicken and Plantain",
+      "price": "N3,500 with Delivery",
+      "image": "images/jollof-chicken-plantain.webp",
+      "description": "Jollof rice with crispy fried chicken and sweet plantains.",
+      "category": "daily-specials"
+    },
+    {
+      "name": "Vegetable Sauce with White Rice",
+      "price": "N3,500 with Delivery",
+      "image": "images/veg-sauce-rice.webp",
+      "description": "Colorful veggie sauce served with rice.",
+      "category": "daily-specials"
+    },
+    {
+      "name": "Barbecue Fish with White Rice and Sauce",
+      "price": "N12,000 with Delivery",
+      "image": "images/bbq-fish-rice.webp",
+      "description": "Grilled BBQ fish with white rice and spicy sauce.",
+      "category": "daily-specials"
+    },
+
+    {
+      "name": "Strawberry Milk Bubble Tea",
+      "price": "N2,500",
+      "image": "images/bubble-strawberry.webp",
+      "description": "Sweet strawberry milk with chewy tapioca pearls.",
+      "category": "bubble-teas"
+    },
+    {
+      "name": "Brown Sugar Bubble Tea",
+      "price": "N2,500",
+      "image": "images/bubble-brownsugar.webp",
+      "description": "Creamy brown sugar boba drink.",
+      "category": "bubble-teas"
+    },
+    {
+      "name": "Matcha Green Tea Boba",
+      "price": "N2,500",
+      "image": "images/bubble-matcha.webp",
+      "description": "Refreshing matcha with pearls.",
+      "category": "bubble-teas"
+    },
+    {
+      "name": "Taro Bubble Tea",
+      "price": "N2,500",
+      "image": "images/bubble-taro.webp",
+      "description": "Purple taro flavor boba drink.",
+      "category": "bubble-teas"
+    },
+    {
+      "name": "Vanilla Coffee Boba",
+      "price": "N2,500",
+      "image": "images/bubble-coffee.webp",
+      "description": "Coffee-flavored boba with a vanilla twist.",
+      "category": "bubble-teas"
+    },
+
+    {
+      "name": "Yam Fries with Sauce",
+      "price": "N2,000",
+      "image": "images/yam-fries.webp",
+      "description": "Crispy fried yam slices with spicy dip.",
+      "category": "snacks"
+    },
+    {
+      "name": "Plantain Chips",
+      "price": "N1,000",
+      "image": "images/plantain-chips.webp",
+      "description": "Crispy and salty ripe plantain chips.",
+      "category": "snacks"
+    },
+    {
+      "name": "Meat Pie",
+      "price": "N1,000",
+      "image": "images/meat-pie.webp",
+      "description": "Flaky pastry filled with minced meat and veggies.",
+      "category": "snacks"
+    },
+    {
+      "name": "Scotch Egg",
+      "price": "N1,000",
+      "image": "images/scotch-egg.webp",
+      "description": "Egg wrapped in sausage, crumbed and fried.",
+      "category": "snacks"
+    },
+    {
+      "name": "Puff Puff (6pcs)",
+      "price": "N1,000",
+      "image": "images/puff-puff.webp",
+      "description": "Sweet fluffy dough balls deep-fried golden.",
+      "category": "snacks"
+    },
+
+    {
+      "name": "Grilled Chicken (Full)",
+      "price": "N15,000",
+      "image": "images/grilled-chicken.webp",
+      "description": "Spicy marinated grilled chicken.",
+      "category": "grills"
+    },
+    {
+      "name": "Grilled Suya Beef",
+      "price": "N3,000",
+      "image": "images/suya-beef.webp",
+      "description": "Grilled spicy suya beef with onions.",
+      "category": "grills"
+    },
+    {
+      "name": "Grilled Catfish",
+      "price": "N10,000",
+      "image": "images/grilled-catfish.webp",
+      "description": "Fresh catfish grilled and seasoned to perfection.",
+      "category": "grills"
+    },
+    {
+      "name": "Chicken Kebab",
+      "price": "N3,800",
+      "image": "images/kebab.webp",
+      "description": "Tender chicken chunks on skewers.",
+      "category": "grills"
+    },
+    {
+      "name": "BBQ Turkey Wings",
+      "price": "N4,000",
+      "image": "images/turkey-wings.webp",
+      "description": "Barbecue-style turkey wings grilled to taste.",
+      "category": "grills"
+    }
+    ,
+    {
+        "name": "White Native Rice with Stake",
+        "price": "N3,500 with Delivery",
+        "image": "images/native-rice-steak.webp",
+        "description": "Local white rice paired with tender, juicy steak. A satisfying fusion of native and modern flavors.",
+        "category": "daily-specials"
+    },
+    {
+        "name": "Food Tray with Assorted Meals",
+        "price": "N25,000 with Delivery",
+        "image": "images/food-tray.webp",
+        "description": "A large food tray packed with assorted meals including rice, meats, sauces, and sides. Perfect for parties and family sharing.",
+        "category": "daily-specials"
+    },
+    {
+        "name": "African Native Rice with Native Fish and Veggies",
+        "price": "N3,500 with Delivery",
+        "image": "images/native-rice-fish-veggies.webp",
+        "description": "Native rice cooked with herbs, paired with fresh fish and sautéed vegetables. A wholesome traditional favorite.",
+        "category": "daily-specials"
+    },
+    {
+        "name": "Chicken Goat Meat Pepper Soup with White Rice",
+        "price": "N4,000 with Delivery",
+        "image": "images/pepper-soup-rice.webp",
+        "description": "Spicy pepper soup loaded with chicken and goat meat, served with white rice and seasoned vegetables. A comforting and warming meal.",
+        "category": "daily-specials"
+    },
+    {
+        "name": "Fried Rice with Fried Chicken and Veggies",
+        "price": "N3,500 with Delivery",
+        "image": "images/fried-rice-chicken.webp",
+        "description": "Classic fried rice with crispy fried chicken and mixed vegetables. A crowd-pleasing favorite for all occasions.",
+        "category": "daily-specials"
+    }
+  ]
+}
