@@ -3,20 +3,30 @@ const prevBtn = document.querySelector(".carousel-btn.prev");
 const nextBtn = document.querySelector(".carousel-btn.next");
 const carouselContainer = document.querySelector(".carousel-container");
 
-
-
 let meals = [];
 let currentIndex = 0;
 
-fetch("data/meals.json")
-  .then((response) => response.json())
-  .then((data) => {
-    meals = data.meals.slice(0, 10); 
-    renderMeals();
-    updateCarousel();
-    startAutoplay(); 
-  })
-  .catch((error) => console.error("Error loading meals:", error));
+// Check if meals exist in localStorage
+const storedMeals = localStorage.getItem("mealsData");
+
+if (storedMeals) {
+  meals = JSON.parse(storedMeals);
+  renderMeals();
+  updateCarousel();
+  startAutoplay();
+} else {
+  // Fetch and store in localStorage if not found
+  fetch("data/meals.json")
+    .then((response) => response.json())
+    .then((data) => {
+      meals = data.meals.slice(0, 10);
+      localStorage.setItem("mealsData", JSON.stringify(meals));
+      renderMeals();
+      updateCarousel();
+      startAutoplay();
+    })
+    .catch((error) => console.error("Error loading meals:", error));
+}
 
 function renderMeals() {
   carousel.innerHTML = "";
@@ -52,7 +62,7 @@ function startAutoplay() {
 
     currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
     updateCarousel();
-  }, 4000); // Change slide every 4 seconds
+  }, 4000);
 }
 
 function stopAutoplay() {
@@ -61,7 +71,6 @@ function stopAutoplay() {
 
 carouselContainer.addEventListener("mouseenter", stopAutoplay);
 carouselContainer.addEventListener("mouseleave", startAutoplay);
-
 
 nextBtn.addEventListener("click", () => {
   const itemsPerPage = window.innerWidth >= 1024 ? 3 : 1;
@@ -79,6 +88,4 @@ prevBtn.addEventListener("click", () => {
   updateCarousel();
 });
 
-
 window.addEventListener("resize", updateCarousel);
-

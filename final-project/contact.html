@@ -15,6 +15,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <title>Contact Us - De Bubbles Eatery</title>
 </head>
 <body>
@@ -36,16 +37,16 @@
       <h2>Send Us a Message</h2>
       <form action="thankyou.html" method="get">
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required/>
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required/>
+        <input type="email" id="email" name="email" required>
 
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone"/>
+        <input type="tel" id="phone" name="phone">
 
         <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject"/>
+        <input type="text" id="subject" name="subject">
 
         <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
@@ -58,8 +59,8 @@
       <h2>Find Us Here</h2>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127084.28111132208!2d7.924649270650546!3d5.042334377325369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1729543308034!5m2!1sen!2sng"
-        width="100%" 
-        height="450" 
+        width="400" 
+        height="585" 
         style="border:0;" 
         allowfullscreen="" 
         loading="lazy" 
@@ -67,8 +68,21 @@
       </iframe>
   </section>
 
+  <div   id="weather" class="weather-widget">
+    <h3>Current Weather</h3>
+    <div class="weather-content">
+        <figure>
+            <img id="weather-icon" src="WeatherIcon.png" alt="Weather icon" width="48" height="48">
+            <figcaption id="weather-desc">Loading...</figcaption>
+        </figure>
+        <p class="temperature">
+            <span id="current-temp">--</span>°C
+        </p>
+    </div>
+  </div>
   </main>
-    <footer>
+
+  <footer>
         <div class="contact-info">
             <h3>De-Bubbles Eatery</h3>
             <p>Address: De'Bubbles Eatery at Uniuyo Town Campus close to Female Hostel</p>
@@ -121,7 +135,7 @@
         </p>
         <p id="lastModified"></p>
       </div>
-    </footer>   
-    
+        
+    </footer>  
 </body>
 </html>

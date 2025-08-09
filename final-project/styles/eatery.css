@@ -122,11 +122,12 @@ header span {
 /*Footer styles */
 footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
   padding: 2rem;
- 
   color: white;
 }
 
@@ -177,19 +178,8 @@ footer #year {
     font-weight: bold;
 }
 
-
-footer {
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
 footer div {
-margin: 1rem 0;
-}
-
-footer .socials {
-justify-content: center;
+  margin: 1rem 0;
 }
 
 /*Large screens */
@@ -510,6 +500,96 @@ h2 {
   max-width: 600px;
   border-radius: 8px;
 }
+
+/* Dialog card style */
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 350px;
+  height: 200px;
+  max-width: 90%;
+  overflow-y: auto;
+  box-shadow: 0 5px 20px rgba(255, 145, 77, 0.15), 0 2px 8px rgba(0,0,0,0.2);
+  background: #FF914D10;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+dialog::backdrop {
+  background: rgba(31, 31, 31, 0.9);
+}
+
+dialog h3 {
+  margin-top: 0;
+  color: #FF914D;
+  font-size: 1rem;
+}
+
+/* Close button */
+#close-dialog {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  background: #FF914D;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1F1F1F;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(255, 145, 77, 0.15);
+}
+
+#close-dialog:hover {
+  background: #FFD700;
+  color: #1F1F1F;
+}
+
+/* Reviews list style */
+#all-reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#all-reviews-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#see-more-reviews {
+  display: inline-block;
+  background-color: #FF914D;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#see-more-reviews:hover {
+  background-color: #e6762c;
+  transform: translateY(-2px);
+}
+
+#see-more-reviews:active {
+  transform: scale(0.98);
+}
+
 
 /* Location & Newsletter Grid */
 .location-newsletter-wrapper {
@@ -841,7 +921,9 @@ form textarea {
 /* Side-by-side on larger screens */
 @media (min-width: 64rem) {
   .contact-container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .form-section, .map-section {
@@ -899,4 +981,77 @@ form textarea {
 
 .cta-button:hover {
   background-color: #e6762c;
+}
+
+.weather-widget {
+  background: #FF914D10; /* matches site accent background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  max-width: 250px;
+  margin: 1rem auto;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.weather-widget h3 {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #FF914D; /* site accent color */
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.weather-content figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-content img {
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(255,145,77,0.15));
+}
+
+.temperature {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF914D;
+}
+
+/* Grid layout only for the main contact container, not the footer */
+@media (min-width: 768px) {
+  main.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "form map"
+      "weather weather";
+    gap: 1rem;
+    align-items: start;
+  }
+
+  main.contact-container > .form-section {
+    grid-area: form;
+  }
+
+  main.contact-container > .map-section {
+    grid-area: map;
+  }
+
+  main.contact-container > #weather,
+  main.contact-container > .weather-widget {
+    grid-area: weather;
+    justify-self: center;
+    width: 320px; /* card width */
+    max-width: calc(100% - 2rem);
+    margin: 0;
+  }
 }

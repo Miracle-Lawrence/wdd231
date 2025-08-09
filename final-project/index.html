@@ -18,8 +18,8 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/script.js" defer></script>
     <script src="scripts/carousel.js" defer></script>
-    <script src="scripts/reviews.js" defer></script>
-    <title>De-Bubbles | Home</title>
+    <script type="module" src="scripts/main-reviews.mjs"></script>
+    <script type="module" src="scripts/meal-carousel.mjs"></script>    <title>De-Bubbles | Home</title>
 </head>
 <body>
     <header>
@@ -77,9 +77,17 @@
 <section class="testimonials">
   <h2>What Our Customers Say</h2>
   <blockquote id="testimonial">Loading reviews...</blockquote>
+  <button id="see-more-reviews" type="button" class="see-more-btn">
+    See More Reviews
+  </button>
 </section>
 
-
+<!-- Dialog for Reviews -->
+<dialog id="reviews-dialog">
+  <button id="close-dialog" aria-label="Close reviews">&times;</button>
+  <h3>Customer Reviews</h3>
+  <ul id="all-reviews-list"></ul>
+</dialog>
 
 <div class="location-newsletter-wrapper">
   <section class="place-order" id="order">
