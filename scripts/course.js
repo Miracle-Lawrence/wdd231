@@ -142,3 +142,4 @@ coursesContainer.addEventListener("click", (e) => {
     displayCourseDetails(selectedCourse);
   }
 });
+// Make this text a comment in my JS code

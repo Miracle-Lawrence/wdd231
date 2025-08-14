@@ -825,7 +825,6 @@ form button:hover {
 }
 
 .package-card ul {
-  list-style:calc(disc) inside;
   padding: 1rem ;
   font-size: 0.8rem;
 }
